@@ -1,0 +1,194 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+
+import bg from '../assets/bgc3.jpg';
+import bird from '../assets/bird.svg?raw';
+---
+
+<Layout title="le allodole">
+    <!-- bg -->
+    <div class="absolute -z-10 flex min-h-screen w-full flex-col justify-center lg:block">
+        <Image src={bg} alt="bg" class="mt-20 h-auto w-screen lg:m-0" />
+    </div>
+
+    <!-- bird -->
+    <div
+        class="absolute top-0 flex h-screen w-full select-none items-start justify-center pt-8 lg:m-0"
+    >
+        <Fragment set:html={bird} />
+    </div>
+
+    <!-- scroll icon -->
+    <div class="hidden h-screen w-full flex-col items-center justify-end pb-8 lg:absolute lg:flex">
+        <Icon name="ph:mouse-simple-light" class="h-6 w-6 text-white" />
+    </div>
+
+    <!-- menu -->
+    <div
+        class="flex h-screen w-full flex-col items-center justify-end p-8 lg:flex-row lg:justify-between"
+    >
+        <div
+            class="z-10 flex flex-col items-center border-white p-4 font-['eufm10'] text-4xl font-bold text-white lg:h-2/3 lg:items-baseline lg:border-l-2 lg:py-12"
+        >
+            <a
+                class="mix-blend-difference transition-all hover:bg-rose-500 lg:pr-1"
+                href="#manifesto">.manifesto</a
+            >
+            <a class="mix-blend-difference transition-all hover:bg-rose-500 lg:pr-1" href="#"
+                >.call 1</a
+            >
+            <a class="mix-blend-difference transition-all hover:bg-rose-500 lg:pr-1" href="#"
+                >.shop</a
+            >
+        </div>
+        <div
+            class="z-10 flex justify-end border-white p-4 text-white lg:h-2/3 lg:flex-col lg:space-x-0 lg:border-r-2 lg:py-12 lg:pr-2"
+        >
+            <a target="_blank" href="#"
+                ><Icon
+                    name="ph:instagram-logo-duotone"
+                    class="h-10 w-10 p-1 transition-all hover:text-rose-500"
+                /></a
+            >
+            <a target="_blank" href="#"
+                ><Icon
+                    name="ph:tiktok-logo-duotone"
+                    class="h-10 w-10 p-1 transition-all hover:text-rose-500"
+                /></a
+            >
+        </div>
+    </div>
+
+    <!-- manifesto -->
+    <div id="manifesto" class="flex w-full flex-col p-8 lg:flex-row">
+        <div class="top-0 self-start pt-8 text-white lg:sticky lg:w-1/3">
+            <div class="pb-2 font-['eufm10'] text-6xl lg:pb-4">.manifesto</div>
+            <div>
+                <a
+                    class="hidden pr-1 font-['eufm10'] text-3xl transition-all hover:bg-rose-500 lg:block lg:w-min lg:whitespace-nowrap"
+                    href="#01">1. sul canto delle allodole</a
+                >
+            </div>
+            <div>
+                <a
+                    class="hidden pr-1 font-['eufm10'] text-3xl transition-all hover:bg-rose-500 lg:block lg:w-min lg:whitespace-nowrap"
+                    href="#02">2. sull'assassinio degli alberi</a
+                >
+            </div>
+            <div>
+                <a
+                    class="hidden pr-1 font-['eufm10'] text-3xl transition-all hover:bg-rose-500 lg:block lg:w-min lg:whitespace-nowrap"
+                    href="#03">3. sulla solitudine dello scrittore</a
+                >
+            </div>
+        </div>
+        <div class="flex flex-col space-y-3 text-white lg:w-1/2">
+            <div class="pt-8 font-['eufm10'] text-4xl" id="01">1. sul canto delle allodole</div>
+            <div class="text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus elit eget
+                interdum ornare. Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Nam luctus odio eget ullamcorper auctor. Cras rutrum
+                tincidunt semper. Curabitur varius elementum leo, sit amet condimentum ex placerat
+                fermentum. Praesent eget laoreet magna. Praesent ligula ligula, imperdiet eu
+                volutpat ut, commodo vel lectus. Praesent non sem sed lacus dapibus lacinia. Nam at
+                ullamcorper felis, ut lacinia urna. Nulla tristique condimentum diam et iaculis.
+                Pellentesque nec dui faucibus, feugiat risus sit amet, hendrerit velit. Aliquam
+                congue, eros sit amet tempus placerat, lectus libero malesuada tellus, vitae
+                eleifend felis turpis sed velit. Nullam tristique pharetra nunc, quis venenatis
+                massa pellentesque vitae. Curabitur tellus mi, viverra eu pellentesque ut, ultrices
+                a diam. Nam porta tristique magna euismod pulvinar. Nam eget orci metus. Etiam
+                sollicitudin turpis non ante accumsan fringilla. Donec sed ipsum ac mi eleifend
+                sodales sit amet nec sapien. Nulla neque nunc, iaculis dignissim congue malesuada,
+                sodales non urna. Vivamus vitae fermentum nulla. Integer aliquet neque a dui
+                efficitur, non vestibulum magna lobortis. Aenean tristique tincidunt tellus, eget
+                vulputate dui tempus ac. Donec urna urna, maximus in mattis sit amet, condimentum
+                eget purus. Praesent consequat venenatis sem. Etiam aliquam magna magna, quis
+                ultrices felis pulvinar ut. Sed elementum felis purus, at convallis metus aliquet
+                vel. Pellentesque pretium est et ipsum auctor bibendum. In hac habitasse platea
+                dictumst. Etiam at tincidunt nunc. Quisque tincidunt nisi nec sem bibendum
+                vulputate. Cras eget placerat justo. Vivamus sed justo vestibulum, suscipit sem non,
+                pretium eros. Aenean in imperdiet ligula. Mauris vitae mauris in sem laoreet
+                dapibus. Morbi tristique ultrices nibh nec efficitur. Curabitur eros nisi, varius
+                quis ipsum laoreet, suscipit porta quam. In efficitur sapien non posuere placerat.
+                Sed vitae massa nunc. Vestibulum dignissim, turpis et euismod facilisis, lectus.
+            </div>
+            <div class="pt-16 font-['eufm10'] text-4xl" id="02">
+                2. sull'assassinio degli alberi
+            </div>
+            <div class="text-xl">
+                Nulla tristique condimentum diam et iaculis. Pellentesque nec dui faucibus, feugiat
+                risus sit amet, hendrerit velit. Aliquam congue, eros sit amet tempus placerat,
+                lectus libero malesuada tellus, vitae eleifend felis turpis sed velit. Nullam
+                tristique pharetra nunc, quis venenatis massa pellentesque vitae. Curabitur tellus
+                mi, viverra eu pellentesque ut, ultrices a diam. Nam porta tristique magna euismod
+                pulvinar. Nam eget orci metus. Etiam sollicitudin turpis non ante accumsan
+                fringilla. Donec sed ipsum ac mi eleifend sodales sit amet nec sapien. Nulla neque
+                nunc, iaculis dignissim congue malesuada, sodales non urna. Vivamus vitae fermentum
+                nulla. Integer aliquet neque a dui efficitur, non vestibulum magna lobortis. Aenean
+                tristique tincidunt tellus, eget vulputate dui tempus ac. Donec urna urna, maximus
+                in mattis sit amet, condimentum eget purus. Praesent consequat venenatis sem. Etiam
+                aliquam magna magna, quis ultrices felis pulvinar ut. Sed elementum felis purus, at
+                convallis metus aliquet vel. Pellentesque pretium est et ipsum auctor bibendum. In
+                hac habitasse platea dictumst. Etiam at tincidunt nunc. Quisque tincidunt nisi nec
+                sem bibendum vulputate. Cras eget placerat justo. Vivamus sed justo vestibulum,
+                suscipit sem non, pretium eros. Aenean in imperdiet ligula. Mauris vitae mauris in
+                sem laoreet dapibus. Morbi tristique ultrices nibh nec efficitur. Curabitur eros
+                nisi, varius quis ipsum laoreet, suscipit porta quam. In efficitur sapien non
+                posuere placerat. Sed vitae massa nunc. Vestibulum dignissim, turpis et euismod
+                facilisis, lectus.
+            </div>
+            <div class="pt-16 font-['eufm10'] text-4xl" id="03">
+                3. sulla solitudine dello scrittore
+            </div>
+            <div class="text-xl">
+                Vivamus felis massa, tincidunt in sapien non, egestas maximus massa. Aenean sit amet
+                leo felis. Suspendisse tempus sapien eget fringilla rutrum. Aenean pretium velit nec
+                tristique pulvinar. Suspendisse accumsan tortor at arcu lacinia, quis pretium libero
+                pulvinar. Sed ultricies odio quis mauris hendrerit, non lobortis nisl ultrices.
+                Curabitur sagittis sollicitudin ipsum, eu lacinia ligula facilisis ut. Fusce
+                efficitur sodales nulla at lobortis. Etiam tristique vitae arcu vel blandit. Cras
+                orci ex, viverra pretium leo sollicitudin, pellentesque feugiat eros. Ut porttitor
+                egestas aliquam. Quisque et erat quis dui varius ornare vel in massa. Vivamus
+                malesuada felis sit amet pellentesque faucibus. Etiam scelerisque viverra viverra.
+                Cras dictum tellus turpis, in interdum ipsum euismod non. Aliquam maximus ex id
+                tempor eleifend. Aliquam viverra nisl venenatis dictum egestas. Nulla facilisi.
+                Vivamus posuere facilisis interdum. Nullam et facilisis risus. Donec nunc nulla,
+                semper et turpis fermentum, cursus scelerisque mi. Suspendisse ornare arcu eget
+                rhoncus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                id metus ut velit eleifend aliquam. Aenean at elementum libero, eget malesuada mi.
+                Pellentesque fringilla lacinia risus, ut tempor quam eleifend non. Donec et
+                fermentum erat. Integer ullamcorper lobortis urna, iaculis scelerisque augue
+                vestibulum quis. Nulla rhoncus libero non tristique vestibulum. Vivamus venenatis,
+                nisl et eleifend gravida, metus turpis tincidunt urna, quis tempus orci arcu sit
+                amet massa. Maecenas a malesuada quam. Fusce nec tortor dui. Fusce gravida ipsum nec
+                maximus euismod. Duis neque enim, semper id porta non, convallis et.
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="h-80"></div>
+</Layout>
+
+<style is:global>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #bird {
+        @apply w-screen mix-blend-difference lg:w-1/2;
+    }
+
+    .icon-tiktok {
+        @apply h-8 w-8;
+    }
+</style>
+
+<style>
+    body {
+        @apply bg-[#131313ff];
+    }
+</style>

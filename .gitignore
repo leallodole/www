@@ -1,0 +1,6 @@
+# astro stuff
+dist/
+.astro/
+
+# node stuff
+node_modules/
